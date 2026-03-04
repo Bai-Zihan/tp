@@ -11,7 +11,7 @@ You can reach us at the email `seer[at]comp.nus.edu.sg`
 
 ### Xia Wenhao
 
-<img src="images/wenhao-nus.png.png" width="200px">
+<img src="images/wenhao-nus.png" width="200px">
 
 [[github](https://github.com/wenhao-nus)]
 
