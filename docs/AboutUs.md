@@ -27,14 +27,16 @@ You can reach us at the email `seer[at]comp.nus.edu.sg`
 * Role:  Deliverables and deadline
 * Responsibilities: Data Model & Logic
 
-### Johnny Doe
 
-<img src="images/johndoe.png" width="200px">
+### Kelvin Ng
 
-[[github](http://github.com/johndoe)] [[portfolio](team/johndoe.md)]
+<img src="images/kelv5.png" width="200px">
 
-* Role: Developer
-* Responsibilities: Data
+[[github](http://github.com/kelv5)]
+
+* Role: Code Quality & Task Tracking
+* Responsibilities: UI
+
 
 ### Chen Guanhua 
 
@@ -45,6 +47,7 @@ You can reach us at the email `seer[at]comp.nus.edu.sg`
 
 * Role: Integration & Testing
 * Responsibilities: DevOps + Data Model & Logic
+
 
 ### Josiah Low 
 
