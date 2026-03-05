@@ -262,29 +262,30 @@ _{Explain here how the data archiving feature will be implemented}_
 
 **Target user profile**:
 
-* has a need to manage a significant number of contacts
-* prefer desktop apps over other types
+* is a NUS computer science teaching assistant managing multiple tutorial classes
+* needs to organize and track contacts across distinct academic roles (students, professors, fellow TAs, course admins)
+* requires the ability to categorize and quickly retrieve contacts using specific tags (e.g., by tutorial group)
+* frequently handles incomplete contact profiles that need to be updated iteratively (e.g., adding Telegram handles later)
+* needs a reliable way to archive and export contact data at the end of the academic semester
+* prefers a streamlined, role-specific tool over a general-purpose address book
 * can type fast
+* prefers desktop apps over other types
 * prefers typing to mouse interactions
 * is reasonably comfortable using CLI apps
 
-**Value proposition**: manage contacts faster than a typical mouse/GUI driven app
+**Value proposition**: 
+This product aims to streamline communication from TA’s to their students, other TA’s, teaching staff, professors, and course admins. It achieves this by organizing contacts into tutorial groups and tags. It supports custom contact categories (e.g. Telegram handles), and more searching functionality (e.g. by groups). It also makes contacts storing more flexible by only making names mandatory. 
 
 
 ### User stories
 
 Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unlikely to have) - `*`
 
-| Priority | As a …​                                    | I want to …​                     | So that I can…​                                                        |
-| -------- | ------------------------------------------ | ------------------------------ | ---------------------------------------------------------------------- |
-| `* * *`  | new user                                   | see usage instructions         | refer to instructions when I forget how to use the App                 |
-| `* * *`  | user                                       | add a new person               |                                                                        |
-| `* * *`  | user                                       | delete a person                | remove entries that I no longer need                                   |
-| `* * *`  | user                                       | find a person by name          | locate details of persons without having to go through the entire list |
-| `* *`    | user                                       | hide private contact details   | minimize chance of someone else seeing them by accident                |
-| `*`      | user with many persons in the address book | sort persons by name           | locate a person easily                                                 |
-
-*{More to be added}*
+| Priority | As a …​ | I want to …​                         | So that I can…​                                                                                                          |
+| -------- |---------|--------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
+| `* * *`  | TA      | add a contact to the address book    | keep a record of a person.                                                                                               |
+| `* * *`  | TA      | delete a contact from the app        | remove unwanted entries and keep my contact list accurate.                                                               |
+| `* * *`  | TA      | view all contacts from the app       | see all entries in the contact list.                                                                                     |
 
 ### Use cases
 
@@ -444,16 +445,28 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
 ### Non-Functional Requirements
 
-1.  Should work on any _mainstream OS_ as long as it has Java `17` or above installed.
-2.  Should be able to hold up to 1000 persons without a noticeable sluggishness in performance for typical usage.
-3.  A user with above average typing speed for regular English text (i.e. not code, not system admin commands) should be able to accomplish most of the tasks faster using commands than using the mouse.
-
-*{More to be added}*
+1. All commands should have a response within 500ms.
+2. All contact information should be stored locally.
+3. Whenever a typo or mistake is made there is a message instead of a crash.
+4. All actions other than ‘list’ should have a warning before it for confirmation.
+5. The software should be able to host at least 100 students in total.
+6. The software should take no more than 200MB of space.
+7. Exported files for backup should be stored in a user-editable format.
+8. The software should be platform-independent, supporting all Windows, macOS and Linux.
+9. The software should not require any installers and should be able to be packaged into a single JAR file.
+10. The software should not depend on any remote server.
+11. GUI should provide visual feedback, but input is primarily text-based.
+12. The software should be able to handle corrupted and missing files.
+13. The software should be single-user based only.
 
 ### Glossary
 
-* **Mainstream OS**: Windows, Linux, Unix, MacOS
-* **Private contact detail**: A contact detail that is not meant to be shared with others
+* **Teaching Assistant (TA)**: A member of the teaching team who supports a course by running tutorials/labs, facilitating discussions, answering student questions, and coordinating with professors, course admins, and other TAs.
+* **Tag**: A user-defined label attached to a contact to classify and organize them (e.g., student, prof, cs2103, tut01, projectgrpA). Tags enable quick filtering and searching across the contact list.
+* **Course**: A structured module offered by the university with a unique course code (e.g. CS2101).
+* **Tutorial/Lab Group**: A specific class grouping of students with a tutorial/lab code (e.g. Tut10, Lab11) of a course assigned to a TA.
+* **Course Admin**: A staff member responsible for the administrative and operational aspects of a course (e.g., scheduling, enrolment matters, logistics, announcements, and handling exceptional cases).
+* **Student**: A NUS Computer Science enrolled in a course supported by the TA.
 
 --------------------------------------------------------------------------------------------------------------------
 
