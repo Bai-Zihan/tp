@@ -290,7 +290,7 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
 (For all use cases below, the System is `TAConnect` unless specified otherwise)
 
-**Use case: UC01 - View All Contacts**
+<ins> **Use case: UC01 - View All Contacts** </ins>
 
 **Preconditions:** TA has at least one contact in their list
 
@@ -318,7 +318,7 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
       Use case ends.
 
 
-**Use case: UC02 - Add A Contact**
+<ins> **Use case: UC02 - Add A Contact** </ins>
 
 **Guarantees:** A new contact is stored in the address book
 
@@ -342,7 +342,7 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
     * 3a1. TAConnect undo the change and displays the updated list.
 
-**Use case: UC03 - Delete A Contact**
+<ins> **Use case: UC03 - Delete A Contact** </ins>
 
 **Preconditions:** TA has at least one contact in their list
 
@@ -365,7 +365,7 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
     * 2a1. TAConnect undo the change and displays the updated list.
 
-**Use case: UC04 - Edit A Contact**
+<ins> **Use case: UC04 - Edit A Contact** </ins>
 
 **Preconditions:** TA has at least one contact in their list
 
@@ -393,7 +393,7 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
     * 3a1. TAConnect undo the change and displays the updated list.
 
-**Use case: UC05 - Search/Filter Contacts**
+<ins> **Use case: UC05 - Search/Filter Contacts** </ins>
 
 **Preconditions:** TA has at least one contact in their list
 
@@ -419,7 +419,7 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
     * 3a1. TAConnect undo the change and displays the updated list.
 
-**Use case: UC06 - Organise Contacts Into New Groups**
+<ins> **Use case: UC06 - Organise Contacts Into New Groups** </ins>
 
 **Preconditions:** TA has at least one contact in their list
 
